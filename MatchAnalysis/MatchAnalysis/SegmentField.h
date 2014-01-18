@@ -5,14 +5,19 @@
 
 class SegmentField
 {
+private:
+	cv::Mat iFrame;
+
 public:
-	//constructors - destructors
+	//constructors & destructors
 	SegmentField(void);
+	SegmentField(const cv::Mat inputFrame);
 	~SegmentField(void);
 
 	//get and set frame
 	cv::Mat getFrame(void);
 	void setFrame(const cv::Mat);
+	void showFrame();
  
 	cv::Mat segmentation();
 };
