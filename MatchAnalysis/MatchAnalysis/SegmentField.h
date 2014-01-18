@@ -2,6 +2,7 @@
 
 #include <core/core.hpp>
 #include <highgui/highgui.hpp>
+#include <imgproc\imgproc.hpp>
 
 class SegmentField
 {

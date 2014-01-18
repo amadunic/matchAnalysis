@@ -11,12 +11,14 @@ void main()
 	cout << "Match analysis with OpenCV" << endl;
 	cout << "Development branch" << endl;
 
-	cv::Mat inputFrame = cv::imread("Frames/football_field.jpg", CV_LOAD_IMAGE_COLOR);
+	cv::Mat inputFrame = cv::imread("Frames/field3.png", CV_LOAD_IMAGE_COLOR);
 
 	if(inputFrame.data)
 	{
 		SegmentField segmentation(inputFrame);
 		segmentation.showFrame();
+		cv::waitKey(0);
+		segmentation.segmentation();
 		cv::waitKey(0);
 	}	
 	else
