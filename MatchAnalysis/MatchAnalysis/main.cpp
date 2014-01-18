@@ -1,8 +1,10 @@
 #include <iostream>
+#include <core/core.hpp>
+#include <highgui/highgui.hpp>
 
 using namespace std;
 
 void main()
 {
-	cout << "Hello Git!" << endl;
+	cout << "Match analysis with OpenCV" << endl;
 }
